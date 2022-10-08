@@ -1,6 +1,7 @@
 ---
 layout: default
 use_math: true
+comments: true
 ---
 ### Machine Learning
 
