@@ -110,7 +110,15 @@ $f(x) = f(a) + f'(a) (x-a) + (1/2) f"(a) (x-a)^2$
 
 at minima, 
 
+
+#### SVM
+
+
+
 #### References:
+[https://cs.stackexchange.com/questions/77368/why-do-we-try-to-maximize-lagrangian-in-svms](https://cs.stackexchange.com/questions/77368/why-do-we-try-to-maximize-lagrangian-in-svms)
+[https://stats.stackexchange.com/questions/451487/confusion-about-karush-kuhn-tucker-conditions-in-svm-derivation](https://stats.stackexchange.com/questions/451487/confusion-about-karush-kuhn-tucker-conditions-in-svm-derivation)
+[https://see.stanford.edu/materials/aimlcs229/cs229-notes3.pdf](https://see.stanford.edu/materials/aimlcs229/cs229-notes3.pdf)
 [https://www.cs.ubc.ca/~schmidtm/Documents/2005_Notes_Lasso.pdf](https://www.cs.ubc.ca/~schmidtm/Documents/2005_Notes_Lasso.pdf)
 
 

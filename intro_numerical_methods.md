@@ -30,6 +30,9 @@ $ A = U \Sigma V^T$
 
 where $U$ and $V$ are matrices consisting of orthonormal eigenvectors of matrices $A A^T$ and $A^T A$, $\Sigma$ is a diagonal matrix with root of eigenvalues of $A$
 
+Applications:
+Given a $m$ x $n $ matrix $A$ of user-item interaction, we can model the user latent matrix by $ U * \Sigma^{1/2} $ and the item matrix by $ \Sigma^{1/2} * V$ where $U$ is a $ m$ x $m $ and V is a $n $x $n$ symmetric matrix. Given a unseen user-item pair, we can multiply the two latent features to get the value ( e.g movie rating ) of that pair. 
+
 ### Solving system of linear equations
 
 

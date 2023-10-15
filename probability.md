@@ -6,9 +6,36 @@ comments: true
 
 ### Probability Distributions
 
+Random Variable is a variable that can take different values randomly.
+
+Probability distributions describes how likely a random variable or a set of random variable is to each of its possible states. For discrete random variable this is defined using Probability Mass Function (PMF) while continuous ones are defined using Probability Density Function (PDF).
+
+A Marginal probability distribution is a distribution on a subset of variables of the actual distribution defined using all variables.
+
 #### Expectation / Variance
 
+Expectation: Expected value of function $f(x)$ when $x$ is sampled from $P(x)$ is : $ \int P(x) f(x) dx $
+
+Variance: $\mathbb{E} [ (f(x) - \mathbb{E}[f(x)])^2 ]$ ( second central moment)
+
 #### Representation of probability distribution in terms of Moments
+
+$n $ th moment is described as  $ \mathbb{E} [ X^n ] $
+
+Skweness can be described by third moment of standardized $X$: $ \mathbb{E}[((X-\mu) / \sigma)^3] $
+
+#### Mixture of distributions
+
+Gaussian mixture model models the our data $x$ in terms of $K$ gaussian distributions.
+
+$ p(X) = \prod_{i} \sum_{k} \pi_k N (x_i \| \mu_k, \Sigma_k)$
+
+We can calculate the ideal parameters $\theta = {\mu, \Sigma, \pi}$ by using Expectation Maximization algorithm.
+
+- Expectation: Calculate $ \mathbb{E} [ p(X, Z \| \theta)]$
+
+
+
 
 #### Bayes Theorem
 
