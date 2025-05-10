@@ -1,3 +1,13 @@
+<div class="row">
+  <table>
+    <tr>
+      <td> <h5 style="float: left; margin-left:20px"><a href='/'> About Me </a></h5></td> 
+      <td> <h5 style="float: left; margin-left:20px"><a href='/projects'> Projects </a></h5></td> 
+      <td> <h5 style="float: left; margin-left:20px"><a href='/blog'> Blog </a></h5></td> 
+    </tr>
+  </table>
+</div>
+
 ### Table of Contents
 - [Representation Learning & Efficient AI](#representation-learning--efficient-ai)
   - [Early Interest and Google Summer of Code](#early-interest-and-google-summer-of-code)

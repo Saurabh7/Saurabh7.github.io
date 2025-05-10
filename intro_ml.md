@@ -3,6 +3,15 @@ layout: default
 use_math: true
 comments: true
 ---
+<div class="row">
+  <table>
+    <tr>
+      <td> <h5 style="float: left; margin-left:20px"><a href='/'> About Me </a></h5></td> 
+      <td> <h5 style="float: left; margin-left:20px"><a href='/projects'> Projects </a></h5></td> 
+      <td> <h5 style="float: left; margin-left:20px"><a href='/blog'> Blog </a></h5></td> 
+    </tr>
+  </table>
+</div>
 ### Machine Learning
 
 #### Primer with Linear Regression & Logistic Regression
