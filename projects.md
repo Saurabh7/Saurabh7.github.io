@@ -1,3 +1,12 @@
+### Table of Contents
+- [Representation Learning & Efficient AI](#representation-learning--efficient-ai)
+  - [Early Interest and Google Summer of Code](#early-interest-and-google-summer-of-code)
+- [Fairness, Bias and Robustness](#fairness-bias-and-robustness)
+  - [Fine-tuning and Subgroup Robustness for Occupational NER with LLMs ](#diagnosing-the-effects-of-pre-training-data-on-fine-tuning-and-subgroup-robustness-for-occupational-ner-in-clinical-notes)
+
+---
+
+
 #### Representation Learning & Efficient AI 
 
 During my Master’s, I pursued my interesting project in representation learning along with efficient AI models during my work with Dr. Mingchen
@@ -27,6 +36,16 @@ Medicine, New York.
 <img src="images/vd_base_final_0.png" width="250" />
 <img src="images/vd_new_final_five_0.png" width="250" />
 
+
+##### Early Interest and Google Summer of Code
+
+My interest in AI initially developed during my undergraduate years after being selected to work on summer projects sponsored by Google through the Google Summer of Code 2016 and 2014.  
+Collaborating with my mentor Heiko Strathmann, Ph.D., University College London, I implemented efficient algorithms to an [open source Machine Learning project](https://gist.github.com/Saurabh7/b492519a6044a840145824011229a64b).  
+I added Locality Sensitive Hashing for approximate nearest neighbors search, Multiple Kernel Learning for Support Vector Machines, and implemented speed-ups for distance computations in feature spaces using parallelization with OpenMP and GPUs in their linear algebra library.
+
+--- 
+
+
 #### Fairness, bias and Robustness
 
 I realized the problem of fairness when developing my rare disease classification model and investigated it in my work on **Subgroup intersectional fairness for multi-label Chest X-ray classification** ([ICCV 2023 CVAMD](https://arxiv.org/pdf/2403.18196)). Collaborating with fellow students from the Physionet Team at [MIT LCP](https://lcp.mit.edu/physionet) we linked MIMIC-CXR to MIMICIV and MIMIC-SDOH data sets to create subgroups using health insurance and
@@ -34,8 +53,10 @@ income combined with race, forming eight distinct intersectional groups and meas
 $fnr_{kg}$ for each pair of class $k$ and group $g$ separately to
 accommodate intersectional groups in multi-label settings. This resulted in improvement in fairness metrics like Equalized Odds Difference compared to baselines like Empirical Risk Minimization (ERM) and fairness methods like Deep Feature Reweighting (DFR).
 
+---
 
-##### Diagnosing the Effects of Pre-training Data on Fine-tuning and Subgroup Robustness for Occupational NER in Clinical Notes ([ICLR 2025 SCSL](https://openreview.net/forum?id=xfCjvr8MWR)) [^1]
+
+#####  Fine-tuning and Subgroup Robustness for Occupational NER with LLMs ([ICLR 2025 SCSL](https://openreview.net/forum?id=xfCjvr8MWR)) [^1]
 
 Prior studies have primarily examined biases in name-based entities using short sentence templates, but I focused on evaluating occupational NER in long note templates, analyzing biases across gender, race, and annual wage dimensions. I also looked at robustness by assessing cross-domain performance to understand how well the models generalize to unseen domain-specific data, such as healthcare datasets (I2b2 and MIMIC). I fine-tuned LLMs on domain-specific datasets and observed improved performance compared to zero-shot and universal NER models. However, I found statistically significant disparities in recall based on the Friedman test for multiple protected groups. I assessed the null hypothesis that the model treats the groups equally well across dimensions for the same templates.
 
